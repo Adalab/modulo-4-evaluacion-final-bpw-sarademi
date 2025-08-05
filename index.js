@@ -17,12 +17,12 @@ app.use('/personajes', personajesRoutes);
 app.use('/capitulos', capitulosRoutes);
 
 app.get('/', (req, res) => {
-  res.send('¡API de Los Simpsons funcionando!');
+res.send('¡API de Los Simpsons funcionando!');
 });
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`Servidor escuchando en http://localhost:${PORT}`);
+console.log(`Servidor escuchando en http://localhost:${PORT}`);
 });
 
 
